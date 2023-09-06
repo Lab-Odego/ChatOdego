@@ -15,13 +15,12 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # can alter with time
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Connect to the ngrok server : line16 ~ line33
 class Settings(BaseSettings):
     BASE_URL = "http://127.0.0.1:8000"
     USE_NGROK = os.environ.get("USE_NGROK", "False") == "True"
@@ -29,10 +28,8 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
-
 def init_webhooks(base_url):
     pass
-
 
 if settings.USE_NGROK:
     port = sys.argv[sys.argv.index("--port") + 1] if "--port" in sys.argv else 8000
