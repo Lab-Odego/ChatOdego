@@ -5,7 +5,7 @@ import requests
 
 router = APIRouter()
 
-flask_ngrok_url = "http://c2cd-34-32-225-166.ngrok-free.app" // example
+flask_ngrok_url = "http://c2cd-34-32-225-166.ngrok-free.app" # example
 
 @router.post("/chatbot")
 async def test_route3(request: Request):

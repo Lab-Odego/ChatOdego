@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "odego-server"
+version = "0.1.0"
+description = ""
+authors = ["or-m-or <htth815@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.2"
+uvicorn = "^0.23.2"
+pyngrok = "^7.0.0"
+requests = "^2.31.0"
+pydantic-settings = "^2.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

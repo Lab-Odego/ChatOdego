@@ -1,16 +1,14 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 
 import os
 import sys
+import uvicorn
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.logger import logger
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 from pyngrok import ngrok
-
 from routes import chatbot_router
-# import openai
 
-# Creating a FastAPI Object
 app = FastAPI()
 
 app.add_middleware(
@@ -22,8 +20,8 @@ app.add_middleware(
 )
 
 class Settings(BaseSettings):
-    BASE_URL = "http://127.0.0.1:8000"
-    USE_NGROK = os.environ.get("USE_NGROK", "False") == "True"
+    BASE_URL: str = "http://127.0.0.1:8000"
+    USE_NGROK: bool = os.environ.get("USE_NGROK", "False") == "True"
 
 
 settings = Settings()
@@ -40,3 +38,6 @@ if settings.USE_NGROK:
 
 # Include a router in an app object
 app.include_router(chatbot_router.router)
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
