@@ -1,6 +1,7 @@
 # Odego
 
 Simple overview of use/purpose.
+* 시연영상 올릴예정
 
 ## Description
 
