@@ -2,6 +2,12 @@
 
 Simple overview of use/purpose.
 
+> Odego_ver_1.0 시연영상
+<img width="80%" src="https://github.com/or-m-or/ODEGO/assets/121100022/38674002-6b82-46d3-943e-13561db3a89c"/>
+
+> kakao map scraping
+<img width="80%" src="https://github.com/or-m-or/ODEGO/assets/121100022/b0fa7ae3-d2a8-41d3-9961-6433fd7d8422"/> 
+
 ## Description
 
 An in-depth paragraph about your project and overview of use.
