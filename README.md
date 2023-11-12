@@ -1,7 +1,10 @@
 # Odego
 
 Simple overview of use/purpose.
-* 시연영상 올릴예정
+* 시연영상
+<p align="center">
+    <img width="60%" height = "3%" src="https://github.com/Lab-Odego/ChatOdego/assets/121100022/93f0b47d-d1d9-4db9-897f-0ff9ac295438"/>
+</p>
 
 ## Description
 
