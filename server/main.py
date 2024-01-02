@@ -1,4 +1,3 @@
-
 import os
 import sys
 import uvicorn
@@ -6,7 +5,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.logger import logger
 from pydantic_settings import BaseSettings
-from pyngrok import ngrok
 from routes import chatbot_router
 
 app = FastAPI()
